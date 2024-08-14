@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="TechnicalDocumentation.css";>
+    <title>Tab title</title>
+  </head>
+  <body>
+    <nav id="navbar">
+        <header><h1>Topics</h1></header>
+        <ul>
+            <li><h2><a class="nav-link" href="#Networking_Services">Networking Services</a></h2></li>
+            <li><h2><a class="nav-link" href="#Compute_Services">Compute Services</a></h2></li>
+            <li><h2><a class="nav-link" href="#Data_and_Storage_Services">Data and Storage Services</a></h2></li>
+            <li><h2><a class="nav-link" href="#AI_and_Machine_Learning_Services">AI and Machine Learning Services</a></h2></li>
+            <li><h2><a class="nav-link" href="#Security_and_Identity_Services">Security and Identity Services</a></h2></li>
+        </ul>
+
+    </nav>
+
+    <main id="main-doc">
+    <h1>Azure Services Guide</h1>
+
+    <section class="main-section" id="Networking_Services">
+        <header><h2>Networking Services</h2></header>
+        <ul>
+            <li><p>API Apps: Easily build and consume cloud APIs.</p></li>
+            <li><p>API Management: Publish APIs securely and at scale.</p></li>
+            <!-- Add more networking services here -->
+        </ul>
+        <p>Example Azure CLI command for creating a virtual network:</p>
+        <pre><code>az network vnet create / 
+            --name MyVNet /
+            --resource-group MyResourceGroup /
+            --location eastus /
+            --address-prefixes 10.0.0.0/16</code></pre>
+    </section>
+
+    <section class="main-section" id="Compute_Services">
+        <header><h2>Compute Services</h2></header>
+        <ul>
+            <li><p>Virtual Machines: Deploy Windows or Linux VMs.</p></li>
+            <li><p>Azure Kubernetes Service (AKS): Manage containerized applications.</p></li>
+            <!-- Add more compute services here -->
+        </ul>
+        <p>Example Azure CLI command for creating an AKS cluster:</p>
+        <pre><code>az aks create /
+            --resource-group MyResourceGroup /
+            --name MyAKSCluster /
+            --node-count 3 /
+            --enable-addons monitoring /
+            --generate-ssh-keys</code></pre>
+    </section>
+
+    <section class="main-section" id="Data_and_Storage_Services">
+        <header><h2>Data and Storage Services</h2></header>
+        <ul>
+            <li><p>Azure SQL Database: Managed relational database service.</p></li>
+            <li><p>Azure Cosmos DB: Globally distributed NoSQL database.</p></li>
+            <!-- Add more data and storage services here -->
+        </ul>
+        <p>Example Azure CLI command for creating an Azure SQL Database:</p>
+        <pre><code>az sql server create /
+            --resource-group MyResourceGroup /
+            --name MySqlServer /
+            --location eastus /
+            --admin-user myadmin /
+            --admin-password MyP@ssw0rd123</code></pre>
+    </section>
+
+    <section class="main-section" id="AI_and_Machine_Learning_Services">
+        <header><h2>AI and Machine Learning Services</h2></header>
+        <ul>
+            <li><p>Azure Machine Learning: Build, deploy, and manage ML models.</p></li>
+            <li><p>Azure Cognitive Services: APIs for vision, speech, language, and more.</p></li>
+            <!-- Add more AI and ML services here -->
+        </ul>
+        <p>Example Azure CLI command for creating an Azure Machine Learning workspace:</p>
+        <pre><code>az ml workspace create /
+            --resource-group MyResourceGroup /
+            --workspace-name MyMLWorkspace</code></pre>
+    </section>
+
+    <section class="main-section" id="Security_and_Identity_Services">
+        <header><h2>Security and Identity Services</h2></header>
+        <ul>
+            <li><p>Azure Active Directory: Identity and access management.</p></li>
+            <li><p>Azure Key Vault: Securely manage keys, secrets, and certificates.</p></li>
+            <!-- Add more security and identity services here -->
+        </ul>
+        <p>Example Azure CLI command for creating an Azure Key Vault:</p>
+        <pre><code>az keyvault create /
+            --resource-group MyResourceGroup /
+            --name MyKeyVault</code></pre>
+    </section>
+
+    <p class="rec">Remember that this guide provides only a glimpse of Azure's extensive services. For more details, explore the <a href="https://docs.microsoft.com/en-us/azure/">official Azure documentation</a>.</p>
+        
+    </main>
+  </body>
+</html>

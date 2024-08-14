@@ -1,0 +1,97 @@
+body {           
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  h1 {
+    color: #0078D4;
+  }
+  h2 {
+    color: #333;
+  }
+  
+  
+  /* ----- bar style ----- */
+  nav {
+    position: fixed;
+    top:1px;
+    left:1px;
+    width: 15%;
+    min-width:150px;
+    height: 100%;
+    display: box;
+    border: solid #d4d4d4 5px;
+    padding: 1%;
+    margin: 1px;
+    z-index: 2;
+    background-color: white;
+  }
+  nav header{
+    text-align: center;
+    font-size: 2em;
+  }
+  a, a:visited{
+    font-size: 0.8em;
+    color: black;
+  }
+  a:hover{
+    color: #d4d4d4;
+  }
+  
+  
+  /* ----- Main Style ----- */
+  main{
+    display: box;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    margin: 1%;
+    padding: 2%;
+    max-width: 70%;
+    border: solid #d4d4d4 2px;
+  }
+  
+  code {
+    display: flex;
+    text-align: left;
+    position: center;
+    background-color: #d4d4d4;
+    padding: 1.5%;
+    margin: 1%;
+    border-radius: 5px;
+    }
+  
+  
+  .rec {
+    padding-top:4%;
+    text-align: right;
+  }
+  .rec a{
+    font-size:1em;
+    color: blue;
+  }
+  
+  /* ----- Smartphnes ----- */
+  @media only screen and (max-width: 900px){
+    /* due to the FreeCodeCamp objectives, the navigation bar always need to be on the left side. 
+    This is why the it isn't centered */
+    nav {
+      width: 500px;
+      min-width: 500px;
+      display: flex;
+      height: 15rem;
+      z-index: 1;
+    }
+  
+    main{
+      position: relative;
+      float:center;
+      width: 500px;
+      min-width: 500px;
+      left: 0;
+      top: 18rem;
+      display: box;
+      margin: 1% auto 0 auto;
+      padding: 25px 50px;
+    }
+  }
+  
